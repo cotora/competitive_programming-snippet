@@ -1,0 +1,40 @@
+{
+"depth-first search": {
+    "prefix": "dfs",
+    "body": [
+      "template <typename T>",
+      "void dfs(T current){",
+      "    seen.at(current)=true;",
+      "    for(auto x : adjacentList.at(current)){",
+      "        if(!seen.at(x)){",
+      "            dfs(x);",
+      "        }",
+      "    }",
+      "}"
+    ],
+    "description": "depth-first search"
+},
+
+"breadth-first search": {
+    "prefix": "bfs",
+    "body": [
+      "template <typename T>",
+      "void bfs(T start){",
+      "  queue<T> q;",
+      "  q.push(start);",
+      "  seen.at(start)=true;",
+      "  while(!q.empty()){",
+      "    auto current=q.front();",
+      "    q.pop();",
+      "    for(auto x : adjacentList.at(current)){",
+      "        if(!seen.at(x)){",
+      "          seen.at(x)=true;",
+      "          q.push(x);",
+      "        }",
+      "    }",
+      "  }",
+      "}"
+    ],
+    "description": "breadth-first search"
+}
+}

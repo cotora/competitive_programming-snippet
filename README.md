@@ -1,1 +1,2 @@
 # competitive_programming-snippet
+vscode用の競技プログラミングのスニペット集
