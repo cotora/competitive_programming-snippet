@@ -1,5 +1,5 @@
 {
-    "return is x prime": {
+    "return the prime of x": {
 		"prefix": "isprime",
 		"body": [
 		  "template <typename T>",
@@ -11,6 +11,6 @@
 		  "  return true;",
 		  "}"
 		],
-		"description": "return is x prime"
+		"description": "return the prime of x"
 	}
 }
